@@ -14,8 +14,4 @@ defmodule ListUtls do
     Enum.reverse(flatten(list, []))
   end
 
-  def merge(l1, [head | tail]) when is_list(tail) do
-    [head | merge(l1, tail)]
-  end
-
 end
